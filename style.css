@@ -1,0 +1,52 @@
+body{
+  background: #222;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.board{
+  display: flex;
+  width: 21rem;
+  flex-wrap: wrap;
+}
+.square{
+  flex: 0 0 2rem;
+  width: 2rem;
+  border: .5px #ddd dashed;
+  height: 2rem;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  color: #ddd;
+  background: #222;
+}
+.solidTop{
+  border-top: solid #ddd 1px;
+}
+.solidBottom{
+  border-bottom: 1px solid #ddd;
+}
+.square:nth-child(3n){
+  border-right: solid #ddd 1px;
+}
+.square:nth-child(3n+1){
+  border-left: solid #ddd 1px;
+}
+.square:nth-child(9n){
+  border-right: solid dotted 1px;
+}
